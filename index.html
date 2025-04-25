@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solana Quiz Indonesia</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1><i class="fas fa-puzzle-piece"></i> Solana Quiz Indonesia</h1>
+    
+    <div id="menu">
+      <div class="category-description">
+        <p>Pilih kategori quiz di bawah ini:</p>
+      </div>
+      <button class="btn" onclick="startQuiz('indonesia')">
+        <i class="fas fa-landmark"></i> Tentang Indonesia
+      </button>
+      <button class="btn" onclick="startQuiz('solana')">
+        <i class="fas fa-coins"></i> Tentang Solana
+      </button>
+    </div>
+    
+    <div id="quiz" class="hidden">
+      <div class="progress-container">
+        <div class="progress-bar" id="progress-bar"></div>
+      </div>
+      <div class="quiz-header">
+        <div class="quiz-info">
+          <span id="question-counter">Pertanyaan 1/10</span>
+          <span id="score-display">Skor: 0</span>
+        </div>
+      </div>
+      <div id="question" class="question"></div>
+      <div id="choices" class="choices"></div>
+      <div id="feedback" class="feedback hidden"></div>
+      <button id="next-button" class="btn hidden">Pertanyaan Berikutnya</button>
+    </div>
+    
+    <div id="results" class="hidden">
+      <h2>Hasil Quiz</h2>
+      <div id="final-score"></div>
+      <div id="score-message"></div>
+      <button class="btn" onclick="location.reload()">
+        <i class="fas fa-redo"></i> Main Lagi
+      </button>
+    </div>
+  </div>
+
+  <footer>
+    <p>Made By Rizaal With Love</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
